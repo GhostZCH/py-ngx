@@ -10,5 +10,5 @@ elif [ "$1" == "close" ]; then
     echo pid = ${pid} close...
     kill -15 ${pid}
 else
-    python pyngx.py
+    python pyngx.py >> run.log
 fi

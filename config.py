@@ -1,4 +1,6 @@
 CONF = {
+    'master.daemon': True,
+
     'worker.num': 2,
 
     'svr.ip': '',
