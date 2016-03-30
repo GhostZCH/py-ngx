@@ -7,6 +7,7 @@ from epoll_server import EpollServer
 class Worker(object):
     def __init__(self, svr, conf):
         self._svr = EpollServer(svr,
+                                conf['client.type'],
                                 conf['epoll.max_fd'],
                                 conf['epoll.time_out'],
                                 conf['epoll.max_event'])
